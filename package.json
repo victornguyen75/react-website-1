@@ -1,5 +1,6 @@
 {
   "name": "react-website-v1",
+  "homepage": "https://victornguyen75.github.io/react-website-v1",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -16,7 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "reinstall": "rm -rf node_modules/ && npm i"
+    "reinstall": "rm -rf node_modules/ && npm i",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
