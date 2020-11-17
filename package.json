@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "reinstall": "rm -rf node_modules/ && npm i",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
